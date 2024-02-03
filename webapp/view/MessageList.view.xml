@@ -1,0 +1,36 @@
+<mvc:View
+    controllerName="com.keke.chatbot.controller.MessageList"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    class="messageListCenter">
+    
+    <VBox class="topElememt">
+        <Panel
+            headerText="Medical ChatBot"
+            width="550px" 
+            height="600px">
+            <content>
+                
+                    <List id="chatList" height="600px" showSeparators="None">
+                        <items>
+                            <CustomListItem>
+                                
+                            </CustomListItem>
+                        </items>
+                    </List>
+
+                    
+                
+            </content>
+        </Panel>
+
+        <Panel class="inputPanel" width="100%">
+            <HBox class="inputBox">
+                <Input id="chatInput" class="messageInput" valueLiveUpdate="true" width="400px" placeholder="Type a message..." />
+                <Button text="Send" class="messageButton" press=".onAskQuestion" width="100px"/>
+            </HBox>
+        </Panel>
+    </VBox>
+    
+</mvc:View> 
+
