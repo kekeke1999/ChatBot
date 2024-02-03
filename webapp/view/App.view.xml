@@ -10,11 +10,6 @@
 				<Page>
 					<content>
 						<mvc:XMLView viewName="com.keke.chatbot.view.MessageList"/>
-						
-						<!-- <mvc:XMLView viewName="com.keke.chatbot.view.HelloPanel"/>
-						<mvc:XMLView viewName="com.keke.chatbot.view.InvoiceList"/> -->
-						<!-- <mvc:XMLView viewName="com.keke.chatbot.view.MessageList"/> -->
-					
 					</content>
 				</Page>
 			</pages>

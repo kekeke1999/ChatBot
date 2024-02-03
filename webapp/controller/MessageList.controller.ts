@@ -41,8 +41,8 @@ export default class MessageList extends Controller {
             // oList.addItem(questionItem);
 
             const questionIcon = new Icon({
-                src: "sap-icon://person-placeholder", // 使用您选择的图标
-                size: "1rem", // 您可以根据需要调整大小
+                src: "sap-icon://person-placeholder",
+                size: "1rem",
             });
             questionIcon.addStyleClass("iconMargin");
             const questionHBox = new HBOX({
@@ -50,7 +50,7 @@ export default class MessageList extends Controller {
                     questionIcon,
                     questionText
                 ],
-                alignItems: "Center" // 垂直居中对齐items
+                alignItems: "Center"
             });
 
             const questionItem = new CustomListItem({
@@ -60,19 +60,10 @@ export default class MessageList extends Controller {
 
 
             const answerText = new Text({ text: result + "\n" });
-            // answerText.addStyleClass("colorFont");
-            // const answerItem = new CustomListItem({
-            //     content: answerText
-            // });
-            // answerItem.addStyleClass("textRightAlign");
-            // oList.addItem(answerItem);
-            
-
-
 
             const answerIcon = new Icon({
-                src: "sap-icon://ai", // 使用您选择的图标
-                size: "1rem", // 您可以根据需要调整大小
+                src: "sap-icon://ai", 
+                size: "1rem", 
             });
             answerIcon.addStyleClass("iconMargin");
 
@@ -81,10 +72,9 @@ export default class MessageList extends Controller {
                     answerIcon,
                     answerText
                 ],
-                alignItems: "Center" // 垂直居中对齐items
+                alignItems: "Center"
             });
-            // answerText.addStyleClass("colorFont");
-            answerHBox.addStyleClass("textRightAlign"); // 应用类到HBox而不是文本
+            answerHBox.addStyleClass("textRightAlign"); 
 
             const answerItem = new CustomListItem({
                 content: answerHBox
@@ -97,7 +87,7 @@ export default class MessageList extends Controller {
 
         }).catch(() => {
             MessageBox.alert(`Failure while getting answer...`, {
-                actions: MessageBox.Action.CLOSE // enums are now properties on the default export!
+                actions: MessageBox.Action.CLOSE 
             });
         });;
         oInput.setValue("");
